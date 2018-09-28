@@ -1,0 +1,27 @@
+body {
+    background-color: lightgray;
+}
+
+.body-wrapper {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(7, minmax(100px, 1fr));
+    row-gap: 10px;
+
+    /*@formatter:off*/
+    grid-template-areas:
+    ".      .       .       .       .       .       ."      /* header might be needed sometime */
+    "sd     sd      main    main    main    main    main"
+    "sd     sd      .       .       .       .       ."
+    ".      .       .       .       .       .       .";     /* footer might be needed sometime */
+}
+
+#left-sidebar {
+    grid-area: sd;
+    background-color: aqua;
+}
+
+main {
+    grid-area: main;
+    background-color: bisque;
+}
