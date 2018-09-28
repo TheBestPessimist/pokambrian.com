@@ -1,6 +1,6 @@
 body {
     background-color: lightgray;
-    margin: 0;
+    margin: 0; /*needed for 100% utilisation of the space*/
 }
 
 .body-wrapper {
@@ -24,16 +24,18 @@ body {
 
 #left-sidebar {
     grid-area: sd;
-    /*background-color: aqua;*/
+    background-color: aqua;
 }
 
 nav {
-    /*background-color: palegreen;*/
+    background-color: palegreen;
     padding-left: 1em;
     position: sticky;
-    top: 10px;
+    /*this is needed because the nav IS NOT STICKY!! there is some shitty space just above the nav,
+    from left sidebar. WHYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY??????????*/
+    top: 20px;
 
-    height: 100vh; /*needed for justify-content: center*/
+    height: 95vh; /*needed for justify-content: center*/
 
     /*flex for all the headings*/
     display: flex;
