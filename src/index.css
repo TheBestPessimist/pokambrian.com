@@ -22,6 +22,17 @@ body {
     background-color: aqua;
 }
 
+nav {
+    /*background-color: palegreen;*/
+    padding-left: 1em;
+    position: sticky;
+    top: 0;
+}
+
+#left-sidebar > nav > h3 {
+    margin-left: 3em;
+}
+
 main {
     grid-area: main;
     background-color: bisque;
