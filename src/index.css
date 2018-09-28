@@ -26,3 +26,10 @@ main {
     grid-area: main;
     background-color: bisque;
 }
+
+/*!*debugging*!*/
+/** {*/
+    /*border-color: #ff0000 #00ff00 #0000ff rgb(250, 0, 255);*/
+    /*border-style: solid;*/
+    /*border-width: 1px;*/
+/*}*/
