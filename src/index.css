@@ -5,32 +5,51 @@ body {
 
 .body-wrapper {
     display: grid;
-    width: 100%;
-    grid-template-columns: repeat(7, minmax(100px, 1fr));
-    row-gap: 10px;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: "sd        main";
+    grid-template-rows: 1fr;
 
+    margin: 0;
+
+    min-height: 100vh;
+
+    /*grid-template-columns: repeat(7, minmax(100px, 1fr));*/
     /*@formatter:off*/
-    grid-template-areas:
-    ".      .       .       .       .       .       ."      /* header might be needed sometime */
-    "sd     sd      main    main    main    main    main"
-    "sd     sd      .       .       .       .       ."
-    ".      .       .       .       .       .       .";     /* footer might be needed sometime */
+    /*grid-template-areas:*/
+    /*".      .       .       .       .       .       ."      !* header might be needed sometime *!*/
+    /*"sd     sd      main    main    main    main    main"*/
+    /*".      .       .       .       .       .       .";     !* footer might be needed sometime *!*/
+    /*@formatter:on*/
 }
 
 #left-sidebar {
     grid-area: sd;
-    background-color: aqua;
+    /*background-color: aqua;*/
 }
 
 nav {
     /*background-color: palegreen;*/
     padding-left: 1em;
     position: sticky;
-    top: 0;
+    top: 10px;
+
+    height: 100vh; /*needed for justify-content: center*/
+
+    /*flex for all the headings*/
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#left-sidebar > nav > h2 {
+    margin-top: -0.4vh;
 }
 
 #left-sidebar > nav > h3 {
     margin-left: 3em;
+    margin-top: -0.4vh;
 }
 
 main {
@@ -40,7 +59,7 @@ main {
 
 /*!*debugging*!*/
 /** {*/
-    /*border-color: #ff0000 #00ff00 #0000ff rgb(250, 0, 255);*/
-    /*border-style: solid;*/
-    /*border-width: 1px;*/
+/*border-color: #ff0000 #00ff00 #0000ff rgb(250, 0, 255);*/
+/*border-style: solid;*/
+/*border-width: 1px;*/
 /*}*/
