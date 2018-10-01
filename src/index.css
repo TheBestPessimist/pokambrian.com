@@ -75,7 +75,7 @@ nav {
     border-radius: 3px;
 
     /*hover -> normal*/
-    transition-property: background-color, color;
+    transition-property: background-color, color, margin-top, margin-bottom;
     transition-duration: 0.8s;
 }
 
@@ -88,8 +88,11 @@ nav {
 
 .current-navbar-item {
     background-color: darkgray;
+    /*margin-top: 1%;*/
+    /*margin-bottom: 1em;*/
+
     /*normal -> hover*/
-    transition-property: background-color, color;
+    transition-property: background-color, color; /*, margin-top, margin-bottom;*/
     transition-duration: 0.8s;
 }
 
@@ -101,6 +104,16 @@ nav {
 main {
     grid-area: main;
     background-color: bisque;
+
+    padding: 2em;
+}
+
+#select-font {
+    position: fixed;
+    top: 4em;
+    left: 3em;
+
+    z-index: 200;
 }
 
 /*!*debugging*!*/

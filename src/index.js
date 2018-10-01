@@ -1,6 +1,6 @@
 'use strict';
 
-window.addEventListener('scroll', throttled(100, updateNavOnScroll));
+window.addEventListener('scroll', throttled(30, updateNavOnScroll));
 
 /**
  * apply a class on the navbar, depending on body's scroll position
@@ -76,7 +76,7 @@ function choseCurrentElementOnscreen(elements) {
                 break;
             }
         } else if (isLast) {
-            if (window.innerHeight + window.scrollY >= document.body.offsetHeight - window.innerHeight * 2 / 9) {
+            if (window.innerHeight + window.scrollY >= document.body.offsetHeight - window.innerHeight * 1 / 9) {
                 selectedElement = el;
             }
         }
@@ -105,3 +105,13 @@ function throttled(delay, func) {
         return func(...args);
     }
 }
+
+
+/**
+ * font selector
+ */
+document.getElementById("select-font").addEventListener("change", function () {
+    for (let el of document.getElementsByClassName("main-select-font")) {
+        el.style.fontFamily = this.value;
+    }
+});
