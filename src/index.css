@@ -26,18 +26,18 @@ body {
 
 #left-sidebar {
     grid-area: sd;
-    background-color: aqua;
+    /*background-color: aqua;*/
 }
 
 nav {
-    background-color: palegreen;
-    padding-left: 1em;
+    /*background-color: palegreen;*/
+
     position: sticky;
     /*this is needed because the nav IS NOT STICKY!! there is some shitty space just above the nav,
     from left sidebar. WHYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY??????????*/
-    top: 0px;
+    top: 0;
 
-    height: 99.9vh; /*needed for justify-content: center*/
+    height: 100vh; /*needed for justify-content: center*/
 
     /*flex for all the headings*/
     display: flex;
@@ -47,13 +47,16 @@ nav {
     justify-content: center;
 }
 
-#left-sidebar > nav > h2 {
-    margin-top: -0.4vh;
+#left-sidebar > nav > #nav-links > a {
+    font-size: 1.5em;
+    padding-top: 0.3em;
+    text-decoration: none;
+    /*color: */ /*change  links color*/
 }
 
-#left-sidebar > nav > h3 {
-    margin-left: 3em;
-    margin-top: -0.4vh;
+#left-sidebar > nav > #nav-links > .nav-subitem {
+    font-size: 1.2em;
+    margin-left: 2em;
 }
 
 main {
