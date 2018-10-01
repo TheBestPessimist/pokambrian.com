@@ -33,9 +33,9 @@ nav {
     position: sticky;
     /*this is needed because the nav IS NOT STICKY!! there is some shitty space just above the nav,
     from left sidebar. WHYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY??????????*/
-    top: 20px;
+    top: 0px;
 
-    height: 95vh; /*needed for justify-content: center*/
+    height: 99.9vh; /*needed for justify-content: center*/
 
     /*flex for all the headings*/
     display: flex;
