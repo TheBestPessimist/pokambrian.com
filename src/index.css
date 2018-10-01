@@ -68,7 +68,7 @@ nav {
 
 #left-sidebar > nav > #nav-links > a {
     font-size: 1.5em;
-    padding-top: 0.3em;
+    padding: 0.15em 0;
     text-decoration: none;
     /*color: */ /*change  links color*/
 }
