@@ -59,6 +59,9 @@ nav {
     padding: 10px 10px;
 
     list-style: none;
+
+    border-radius: 3px;
+
 }
 
 .nav-item {
@@ -70,6 +73,7 @@ nav {
 
     /*color:; */ /*change  links color*/
 
+    border-radius: 3px;
 }
 
 .nav-item:hover {
