@@ -65,12 +65,20 @@ nav {
     font-size: 1.5em;
     padding: 0.15em 0;
     text-decoration: none;
-    /*color: */ /*change  links color*/
+
+    display: block; /*this makes the anchor use the whole width of the ul, instead of just "textlength" length*/
+
+    /*color:; */ /*change  links color*/
+
 }
 
-#left-sidebar > nav > #nav-links > .nav-subitem {
+.nav-item:hover {
+    background-color: darkgray;
+}
+
+.nav-subitem {
     font-size: 1.2em;
-    margin-left: 2em;
+    padding-left: 2em;
 }
 
 main {
