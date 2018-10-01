@@ -61,7 +61,6 @@ nav {
     list-style: none;
 
     border-radius: 3px;
-
 }
 
 .nav-item {
@@ -71,13 +70,20 @@ nav {
 
     display: block; /*this makes the anchor use the whole width of the ul, instead of just "textlength" length*/
 
-    /*color:; */ /*change  links color*/
+    /*color:; */ /* todo change  links color*/
 
     border-radius: 3px;
+
+    /*hover -> normal*/
+    transition-property: background-color, color;
+    transition-duration: 0.8s;
 }
 
 .nav-item:hover {
     background-color: darkgray;
+    /*normal -> hover*/
+    transition-property: background-color, color;
+    transition-duration: 0.8s;
 }
 
 .nav-subitem {
