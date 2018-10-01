@@ -5,13 +5,15 @@ body {
 
 .body-wrapper {
     display: grid;
+
+    /*temporary grid layout*/
     grid-template-columns: 1fr 4fr;
     grid-template-areas: "sd        main";
     grid-template-rows: 1fr;
 
     margin: 0;
 
-    min-height: 100vh;
+    min-height: 100vh; /*this pushes any possible footer to the bottom*/
 
     /*grid-template-columns: repeat(7, minmax(100px, 1fr));*/
     /*@formatter:off*/
