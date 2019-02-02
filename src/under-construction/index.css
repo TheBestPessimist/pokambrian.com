@@ -77,11 +77,11 @@ div {
 }
 
 .cat-lower {
-    animation: donut-rotate 4s infinite cubic-bezier(0.76, 0, 0.59, 1);
+    animation: donut-rotate 6s infinite cubic-bezier(0.76, 0, 0.59, 1);
 }
 
 .cat-upper {
-    animation: donut-rotate 4s infinite cubic-bezier(0.4, 0, 0.56, 1);
+    animation: donut-rotate 6s infinite cubic-bezier(0.4, 0, 0.56, 1);
 }
 
 .cat-lower,
@@ -189,7 +189,7 @@ div {
     transform-origin: 50% 0;
 }
 .cat-upper .wrapper.bkg-stretch > div {
-    animation: stretch-body-upper 4s infinite;
+    animation: stretch-body-upper 6s infinite;
 }
 .cat-upper .wrapper.body:after {
     content: "";
@@ -293,7 +293,7 @@ div {
     border-style: solid;
     border-width: 0 0.36em 0.36em 0.36em;
     margin-top: -0.6em;
-    animation: mouth-open 4s infinite;
+    animation: mouth-open 6s infinite;
 }
 .cat-upper .wrapper.cat-face .wisker {
     position: absolute;
@@ -443,7 +443,7 @@ div {
 .cat-lower .wrapper.cat-jj {
     transform: rotate(115deg);
     z-index: -1;
-    animation: jj-stretch 4s infinite;
+    animation: jj-stretch 6s infinite;
 }
 .cat-lower .wrapper.bkg {
     transform: rotate(100deg);
@@ -453,7 +453,7 @@ div {
     transform-origin: 50% 0;
 }
 .cat-lower .wrapper.bkg-stretch > div {
-    animation: stretch-body-lower 4s infinite;
+    animation: stretch-body-lower 6s infinite;
 }
 .cat-lower .wrapper.cat-ass > div {
     position: absolute;
